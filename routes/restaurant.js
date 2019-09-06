@@ -28,4 +28,27 @@ router.get('/:id/delete', function(req, res, next) {
 });
 
 
+/* Requests for restuarnt's menus */
+
+/* Get create new restuarant menu item*/
+router.get('/:id/menu/new', (req, res, next) => {
+    res.send('Get req for new menu');
+});
+
+/* Post create new restuarant menu item*/
+router.post('/:id/menu/new', (req, res, next) => {
+    res.send('Post req for new menu');
+});
+
+/* Get edit restuarant menu item*/
+router.get('/:id/menu/:id/edit', (req, res, next) => {
+    res.send('Edit req for menu');
+});
+
+/* Post delete restuarant menu item*/
+router.get('/:id/menu/:id/delete', (req, res, next) => {
+    res.send('Delete item req for new menu');
+});
+
+
 module.exports = router;
